@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'rec. base_conti', 'link-1_rev', 'link-2_rev', 'gripper_rev', 'gripper_conti', 'gripper_link-3_pris', 'gripper_link-2_right_rev', 'gripper_link-1_right_rev', 'gripper_link-2_left_rev', 'gripper_link-1_left_rev', 'gripper_link-4_right_rev', 'gripper_finger_right_rev', 'gripper_link-4_left_rev', 'gripper_finger_left_rev', ]

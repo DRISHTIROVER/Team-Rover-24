@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" textfile="$(find maniac)/urdf/maniac.urdf" />
+  <!--<node
+    name="try"
+    pkg="maniac"
+    type="inverse2.py"> </node>-->
+  <node
+    name="joint_state_publisher"
+    pkg="maniac"
+    type="inverse2.py" 
+    output = "screen"/>
+  <param name = "use_gui" value="false"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find maniac)/launch/mani_config_1.rviz" required="true" />
+  
+</launch>

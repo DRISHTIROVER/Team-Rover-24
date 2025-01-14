@@ -1,0 +1,2 @@
+bot:custom_msg:usb_cam:web_video_server
+-DCATKIN_DEVEL_PREFIX=/home/niyati/main_gui/devel -DCMAKE_INSTALL_PREFIX=/home/niyati/main_gui/install -G Unix Makefiles

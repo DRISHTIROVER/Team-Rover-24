@@ -1,0 +1,11 @@
+{
+  "python.autoComplete.extraPaths": [
+    "/home/rover/web/devel/lib/python3/dist-packages",
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ],
+  "python.analysis.extraPaths": [
+    "/home/rover/web/devel/lib/python3/dist-packages",
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ],
+  "ros.distro": "noetic"
+}

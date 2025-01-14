@@ -1,0 +1,2 @@
+assem1:main_gui/src/bot:main_gui/src/custom_msg:main_gui/src/usb_cam:main_gui/src/web_video_server:maniac:manipulator/src:mapviz:microarm:mip_junior_300
+-DCATKIN_DEVEL_PREFIX=/home/dhruv/mip_junior_300/devel -DCMAKE_INSTALL_PREFIX=/home/dhruv/mip_junior_300/install -G Unix Makefiles

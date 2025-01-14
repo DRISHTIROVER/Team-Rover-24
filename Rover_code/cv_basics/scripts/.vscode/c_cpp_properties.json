@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/niyati/vihaan_rover/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/niyati/vihaan_rover/src/autonomous_bot/include/**",
+        "/home/niyati/vihaan_rover/src/cv_basics/include/**",
+        "/home/niyati/vihaan_rover/src/mjpeg_server/include/**",
+        "/home/niyati/vihaan_rover/src/nmea_navsat_driver/include/**",
+        "/home/niyati/vihaan_rover/src/usb_cam/include/**",
+        "/home/niyati/vihaan_rover/src/web_video_server/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

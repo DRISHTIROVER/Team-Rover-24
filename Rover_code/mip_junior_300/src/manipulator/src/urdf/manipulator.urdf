@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="manipulator">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-4.8639E-05 -5.4812E-07 0.057049"
+        rpy="0 0 0" />
+      <mass
+        value="1.211" />
+      <inertia
+        ixx="0.0051835"
+        ixy="7.9676E-09"
+        ixz="-1.8233E-10"
+        iyy="0.0051828"
+        iyz="-2.0547E-12"
+        izz="0.010209" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rec. base_conti">
+    <inertial>
+      <origin
+        xyz="-0.00146368626161747 -9.8852718209641E-05 0.0183743792601718"
+        rpy="0 0 0" />
+      <mass
+        value="0.854609106931043" />
+      <inertia
+        ixx="0.00399069482461448"
+        ixy="-2.78186280220554E-07"
+        ixz="0.00011630499449875"
+        iyy="0.00508914101449298"
+        iyz="1.21564338948065E-06"
+        izz="0.00813546882870587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/rec. base_conti.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/rec. base_conti.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rec. base_conti"
+    type="continuous">
+    <origin
+      xyz="0 0 0.114"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rec. base_conti" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link-1_rev">
+    <inertial>
+      <origin
+        xyz="-0.0123105891139434 0.16116106210152 -0.00509689011869852"
+        rpy="0 0 0" />
+      <mass
+        value="0.234217490956665" />
+      <inertia
+        ixx="0.00240836860689288"
+        ixy="-2.16537891267053E-18"
+        ixz="6.84998191422513E-19"
+        iyy="0.000194025087811115"
+        iyz="-1.39394023904364E-18"
+        izz="0.00247105299000646" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/link-1_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/link-1_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="link-1_rev"
+    type="revolute">
+    <origin
+      xyz="-0.0349995455376048 0 0.169999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="rec. base_conti" />
+    <child
+      link="link-1_rev" />
+    <axis
+      xyz="-1.15052598247013E-05 0 -0.999999999933814" />
+    <limit
+      lower="-2.35"
+      upper="1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link-2_rev">
+    <inertial>
+      <origin
+        xyz="0.113076280366017 0.00739201718753857 0.00334275497454684"
+        rpy="0 0 0" />
+      <mass
+        value="0.1623735384123" />
+      <inertia
+        ixx="0.000135632470817737"
+        ixy="1.64708813216594E-06"
+        ixz="2.70041539602586E-19"
+        iyy="0.000934109987156515"
+        iyz="4.85422670670619E-20"
+        izz="0.000987952579926769" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/link-2_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/link-2_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="link-2_rev"
+    type="revolute">
+    <origin
+      xyz="0 0.34 0"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="link-1_rev" />
+    <child
+      link="link-2_rev" />
+    <axis
+      xyz="0 1.15052598132157E-05 -0.999999999933814" />
+    <limit
+      lower="-2"
+      upper="1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_rev">
+    <inertial>
+      <origin
+        xyz="-0.000563147290827071 8.80129403357799E-07 -0.000187322541657098"
+        rpy="0 0 0" />
+      <mass
+        value="0.0575858219656577" />
+      <inertia
+        ixx="7.90100126759068E-06"
+        ixy="3.69455232588486E-15"
+        ixz="3.26498934116322E-15"
+        iyy="9.35341727310685E-06"
+        iyz="-3.99443611946131E-13"
+        izz="1.62249916113118E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_rev"
+    type="revolute">
+    <origin
+      xyz="0.24 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link-2_rev" />
+    <child
+      link="gripper_rev" />
+    <axis
+      xyz="0 1.1505E-05 -1" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_conti">
+    <inertial>
+      <origin
+        xyz="0.00768310913740206 0.000761151472574495 0.0250966340991164"
+        rpy="0 0 0" />
+      <mass
+        value="0.0591946494712247" />
+      <inertia
+        ixx="5.01559042680364E-05"
+        ixy="-3.20960304866414E-08"
+        ixz="1.11232279851256E-06"
+        iyy="4.5008214492103E-05"
+        iyz="7.18957266317808E-07"
+        izz="5.10800215146422E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_conti.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_conti.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_conti"
+    type="continuous">
+    <origin
+      xyz="0.0251010925842019 0 -0.00150040267396601"
+      rpy="1.5707963267949 -1.15052598139639E-05 1.5707963267949" />
+    <parent
+      link="gripper_rev" />
+    <child
+      link="gripper_conti" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="gripper_link-3_pris">
+    <inertial>
+      <origin
+        xyz="-5.79699032665637E-08 -3.64036425448688E-08 0.0108254555125079"
+        rpy="0 0 0" />
+      <mass
+        value="0.00651190038071619" />
+      <inertia
+        ixx="5.05308226106208E-06"
+        ixy="-1.4830427541149E-12"
+        ixz="-1.08145526726413E-11"
+        iyy="4.84040166731098E-06"
+        iyz="1.06370574183794E-11"
+        izz="3.05409606723527E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-3_pris.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-3_pris.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-3_pris"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_conti" />
+    <child
+      link="gripper_link-3_pris" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link-2_right_rev">
+    <inertial>
+      <origin
+        xyz="0.00125359574792083 0.00739448713625745 0.00200001442305936"
+        rpy="0 0 0" />
+      <mass
+        value="0.000687964594300513" />
+      <inertia
+        ixx="2.797760409764E-08"
+        ixy="-3.49338196275131E-09"
+        ixz="-7.05217101189498E-14"
+        iyy="7.96409138126757E-09"
+        iyz="-4.01922670901665E-14"
+        izz="3.41071232258168E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-2_right_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-2_right_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-2_right_rev"
+    type="revolute">
+    <origin
+      xyz="0.00600014381534836 0.0124999309676108 0.0177489126114384"
+      rpy="1.57079632679489 0 1.5707963267949" />
+    <parent
+      link="gripper_link-3_pris" />
+    <child
+      link="gripper_link-2_right_rev" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link-1_right_rev">
+    <inertial>
+      <origin
+        xyz="0.0170747263930719 0.0271310070444676 -0.00499980355116741"
+        rpy="0 0 0" />
+      <mass
+        value="0.00834696096807296" />
+      <inertia
+        ixx="2.87190135144377E-06"
+        ixy="-5.91460170015918E-07"
+        ixz="2.44120658592058E-12"
+        iyy="1.04825183675833E-06"
+        iyz="-6.80490293526631E-12"
+        izz="2.65971956454056E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-1_right_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-1_right_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-1_right_rev"
+    type="revolute">
+    <origin
+      xyz="0.00250707644324366 0.0147889742725152 0.0140000288454874"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_link-2_right_rev" />
+    <child
+      link="gripper_link-1_right_rev" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link-2_left_rev">
+    <inertial>
+      <origin
+        xyz="-0.00125364176896048 0.00739448713622459 0.00199998557662912"
+        rpy="0 0 0" />
+      <mass
+        value="0.00068796459430051" />
+      <inertia
+        ixx="2.79776040976395E-08"
+        ixy="3.49338196275193E-09"
+        ixz="-7.05217101308181E-14"
+        iyy="7.96409138126776E-09"
+        iyz="4.01922671427031E-14"
+        izz="3.41071232258165E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-2_left_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-2_left_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-2_left_rev"
+    type="revolute">
+    <origin
+      xyz="0.00599985618385307 -0.0125000690307349 0.0177489126114594"
+      rpy="1.57079632679489 0 1.5707963267949" />
+    <parent
+      link="gripper_link-3_pris" />
+    <child
+      link="gripper_link-2_left_rev" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link-1_left_rev">
+    <inertial>
+      <origin
+        xyz="-0.0170746113404734 0.0271310070444817 -0.00500019644816113"
+        rpy="0 0 0" />
+      <mass
+        value="0.00834696096807295" />
+      <inertia
+        ixx="2.87190135144376E-06"
+        ixy="5.91460170015903E-07"
+        ixz="2.44120658676507E-12"
+        iyy="1.04825183675832E-06"
+        iyz="6.80490293183269E-12"
+        izz="2.65971956454054E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-1_left_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-1_left_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-1_left_rev"
+    type="revolute">
+    <origin
+      xyz="-0.00250739859051907 0.0147889742724824 0.0139999711526493"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_link-2_left_rev" />
+    <child
+      link="gripper_link-1_left_rev" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link-4_right_rev">
+    <inertial>
+      <origin
+        xyz="-0.00292781010190513 0.0197845320223196 -0.0020000336853484"
+        rpy="0 0 0" />
+      <mass
+        value="0.00168799501779766" />
+      <inertia
+        ixx="2.7329636390875E-07"
+        ixy="3.79195173327196E-08"
+        ixz="-2.08805802361985E-13"
+        iyy="2.26500455643946E-08"
+        iyz="4.36273898947491E-13"
+        izz="2.91445089420879E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-4_right_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-4_right_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-4_right_rev"
+    type="revolute">
+    <origin
+      xyz="0.0315002112344799 0.0183596375830973 0.0565300000000055"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="gripper_conti" />
+    <child
+      link="gripper_link-4_right_rev" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_finger_right_rev">
+    <inertial>
+      <origin
+        xyz="0.00875270132816752 0.0147066644300401 -0.0124998992987246"
+        rpy="0 0 0" />
+      <mass
+        value="0.0288686408706256" />
+      <inertia
+        ixx="6.55458669057628E-06"
+        ixy="1.13994355603604E-06"
+        ixz="-4.54297940787703E-12"
+        iyy="3.40216742860847E-06"
+        iyz="1.31153467910649E-11"
+        izz="6.94944777839005E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_finger_right_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_finger_right_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger_right_rev"
+    type="revolute">
+    <origin
+      xyz="-0.00585516682466813 0.0395691354786394 -0.00400006736548425"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_link-4_right_rev" />
+    <child
+      link="gripper_finger_right_rev" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link-4_left_rev">
+    <inertial>
+      <origin
+        xyz="0.00292785675219809 0.0197845362747713 -0.00199996631437699"
+        rpy="0 0 0" />
+      <mass
+        value="0.00168799501779767" />
+      <inertia
+        ixx="2.73296374244496E-07"
+        ixy="-3.79194831732995E-08"
+        ixz="-2.08805683455092E-13"
+        iyy="2.26500352286509E-08"
+        iyz="-4.36273505973909E-13"
+        izz="2.91445089420882E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-4_left_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_link-4_left_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_link-4_left_rev"
+    type="revolute">
+    <origin
+      xyz="0.0314997887613396 -0.0183603624144723 0.0565300000000003"
+      rpy="1.57079632679489 0 1.5707963267949" />
+    <parent
+      link="gripper_conti" />
+    <child
+      link="gripper_link-4_left_rev" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_finger_left_rev">
+    <inertial>
+      <origin
+        xyz="-0.00875241369667212 0.0147066644300446 -0.012500100699615"
+        rpy="0 0 0" />
+      <mass
+        value="0.0288686408706258" />
+      <inertia
+        ixx="6.55443044057636E-06"
+        ixy="-1.13994355603603E-06"
+        ixz="-4.54477710473441E-12"
+        iyy="3.40201117860849E-06"
+        iyz="-1.31153467872739E-11"
+        izz="6.94944777839008E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_finger_left_rev.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://manipulator/meshes/gripper_finger_left_rev.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper_finger_left_rev"
+    type="revolute">
+    <origin
+      xyz="0.00585525886674676 0.0395691354786393 -0.00399993263399412"
+      rpy="0 0 0" />
+    <parent
+      link="gripper_link-4_left_rev" />
+    <child
+      link="gripper_finger_left_rev" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

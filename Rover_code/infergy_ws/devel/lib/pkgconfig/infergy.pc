@@ -1,0 +1,8 @@
+prefix=/home/dhruv/infergy_ws/devel
+
+Name: infergy
+Description: Description of infergy
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

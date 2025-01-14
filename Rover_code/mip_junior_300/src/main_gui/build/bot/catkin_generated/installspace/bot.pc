@@ -1,0 +1,8 @@
+prefix=/home/niyati/main_gui/install
+
+Name: bot
+Description: Description of bot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

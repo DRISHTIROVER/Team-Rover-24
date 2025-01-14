@@ -1,0 +1,8 @@
+prefix=/home/dhruv/mip_junior_300/devel
+
+Name: manipulator
+Description: Description of manipulator
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

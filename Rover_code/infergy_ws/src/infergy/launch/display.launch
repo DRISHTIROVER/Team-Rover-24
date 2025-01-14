@@ -1,0 +1,32 @@
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+  <param
+    name="robot_description"
+    textfile="$(find infergy)/urdf/infergy.urdf" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <node
+    name="joint_state_publisher_gui"
+    pkg="infergy"
+    type="joystick_control.py" 
+    output = "screen"/>
+  <node
+    name="listner"
+    pkg="infergy"
+    type="tf_listner.py" 
+    output = "screen"/>
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find infergy)/my_urdf.rviz" />
+</launch>

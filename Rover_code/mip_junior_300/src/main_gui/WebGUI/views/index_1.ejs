@@ -1,0 +1,25 @@
+<%- include ('header') %>
+    <div style="height:fit-content ;">
+        <main>
+            <%- include('sidebar') %>
+            <div class="b-example-divider "></div>
+            
+            <div class="d-flex flex-column ">
+                <%- include('selection') %>
+                <%- include('robotic_arm') %>
+            </div>
+            <div class="b-example-divider flex-shrink-0"></div>
+            <div class="d-flex flex-column flex-shrink-0" style=" height: fit-content;">
+                <%- include('status') %>
+            </div>
+            
+            <div class="b-example-divider "></div>
+            <div class="d-flex flex-column flex-shrink-0" style=" height: fit-content;">
+            	<%- include('selection') %>
+                <%- include('manual') %>
+                <%- include('autonomous') %>
+            </div>
+        </main>
+    </div>
+
+    <%- include ('footer') %>

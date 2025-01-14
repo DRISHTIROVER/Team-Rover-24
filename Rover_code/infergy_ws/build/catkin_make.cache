@@ -1,0 +1,2 @@
+infergy
+-DCATKIN_DEVEL_PREFIX=/home/dhruv/infergy_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dhruv/infergy_ws/install -G Unix Makefiles

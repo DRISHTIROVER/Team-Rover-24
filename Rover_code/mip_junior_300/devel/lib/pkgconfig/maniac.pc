@@ -1,0 +1,8 @@
+prefix=/home/dhruv/mip_junior_300/devel
+
+Name: maniac
+Description: Description of maniac
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

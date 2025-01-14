@@ -1,0 +1,8 @@
+prefix=/home/dhruv/mip_junior_300/devel
+
+Name: mip_junior_300
+Description: Description of mip_junior_300
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

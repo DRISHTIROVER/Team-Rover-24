@@ -1,0 +1,8 @@
+prefix=/home/dhruv/mip_junior_300/install
+
+Name: bot
+Description: Description of bot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

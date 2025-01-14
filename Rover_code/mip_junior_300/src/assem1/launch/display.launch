@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" textfile="$(find assem1)/urdf/assem1.urdf" />
+  <!--<node
+    name="try"
+    pkg="assem1"
+    type="inverse2.py"> </node>-->
+  <node
+    name="joint_state_publisher"
+    pkg="assem1"
+    type="inverse.py" 
+    output = "screen"/>
+  <param name = "use_gui" value="false"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find assem1)/launch/assem1_rviz.rviz" required="true" />
+  
+</launch>
